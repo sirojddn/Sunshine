@@ -1,7 +1,7 @@
 package sirojddn.github.com.sunshine.app;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -12,6 +12,9 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       /* ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(this, R.layout.list_item_forecast);
+        ListView myView = (ListView) findViewById(R.id.listview_forecast);
+        myView.setAdapter(myAdapter);*/
     }
 
 
@@ -33,6 +36,8 @@ public class MainActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
+
+
 
         return super.onOptionsItemSelected(item);
     }
